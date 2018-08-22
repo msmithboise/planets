@@ -29,7 +29,7 @@ router.post('/', (req, res, next) => {
 })
 
 //edit one
-router.put('/':id, (req, res, next) =>{
+router.put('/:id', (req, res, next) =>{
     Galaxies.findByIdAndUpdate(req.params.id, req.body)
     .then(() => res.send({
         message: 'Success'

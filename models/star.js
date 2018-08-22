@@ -15,7 +15,7 @@ let schema = new Schema({
     color: {
         type: String,
         enum: [
-            'red', 
+            'red',
             'yellow',
             'blue',
             'orange',
@@ -25,12 +25,12 @@ let schema = new Schema({
         required: true
     },
 
-galaxyId: {
-    type: ObjectId,
-    ref: 'Galaxy',
-    required: true
-}
-
+    galaxyId: {
+        type: ObjectId,
+        ref: 'Galaxy',
+        required: true
+    }
+//get by planet would be starId: ref: 'Star'
 
 })
 

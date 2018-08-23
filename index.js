@@ -12,6 +12,7 @@ let galaxyRoutes = require('./routes/galaxies')
 let starRoutes = require('./routes/stars')
 let planetRoutes = require('./routes/planets')
 let moonRoutes = require('./routes/moons')
+let speciesRoutes = require('./routes/species')
 
 
 
@@ -19,7 +20,7 @@ server.use('/api/galaxies', galaxyRoutes)
 server.use('/api/stars', starRoutes)
 server.use('/api/planets', planetRoutes)
 server.use('/api/moons', moonRoutes)
-
+server.use('/api/species', speciesRoutes)
 
 server.use('/api/*', (error,req, res, next) =>{
     res.send(error)

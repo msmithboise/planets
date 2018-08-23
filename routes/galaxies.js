@@ -16,7 +16,7 @@ router.get('/', (req, res, next) => {
 
 router.get('/:id', (req, res, next) =>{
     Galaxies.findById(req.params.id)
-    .then(galaxy = res.send(galaxy))
+    .then(galaxy => res.send(galaxy))
     .catch(next)
 })
 
